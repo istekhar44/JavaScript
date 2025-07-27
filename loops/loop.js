@@ -40,10 +40,10 @@ console.log(sum);
 
 
 //Write the Program to print the infinite hellow
-//  let hellow;
-//  for(let g = 0 ; ;g++){
-//     console.log("hellow");
-//  }
+ let hellow;
+ for(let g = 0 ; ;g++){
+    console.log("hellow");
+ }
 
 
 
@@ -51,17 +51,17 @@ console.log(sum);
 
 
 //Write a program to print infinite no?
-// let no = 1;
-// for(let h = 0 ; ; h++){
-//     console.log("count", h);
-// }
+let no = 1;
+for(let h = 0 ; ; h++){
+    console.log("count", h);
+}
 
 
 //While Loop
 
-// while(StoppingCondition){
-//     //Do the Task
-// }
+while(StoppingCondition){
+    //Do the Task
+}
 
 
 
