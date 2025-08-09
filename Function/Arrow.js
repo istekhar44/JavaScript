@@ -9,6 +9,10 @@ function sum(u,v){
 
 }
 
+
+
+
+
 //Multiply Function 
 // function mul(u,v){
 
@@ -25,24 +29,69 @@ function sum(u,v){
         // write the above program in the short Using Arrow function
 
 
+
+
+
+
                     /*ARROW FUNCTION*/
 
 // const hellow = (a, b) =>{
-//     console.log("Addition",a+b);
+//     console.log("Addition",a+b);                //Arrow function 
 //     console.log("Multiplication",a*b);
 // };   
 
 
 
 
-const mellow = ( c,d) =>{
-    // for(let i = 0 ; i<= 30 ; i++){
-    //     cout<<i<<endl;
-    // }
-    console.log("sum",c+d);
+
+
+// //write the function of the to print the vowel in the string
+// const CountVowel=(str) =>{
+//    let count = 0;
+//    for(const char of str){
+//     if( char === "a" || char === "e" || char === "i" || char === "o" || char === "u")
+//         count++;
     
+//    }
+//    console.log(count);
+// }
+
+// CountVowel("Md Istekhar Alam");
+// CountVowel("jhfidahdkjfsdfkjfkjfiyuifsdokjyfhu");
+
+
+
+
+            
+
+
+//Call Back Function=> A Callback is a function passed as an argument to another function
+
+function mohit(num){
+    console.log("hellow Dunia");
 }
-  
-mellow(4,6);
+                                             
+function rohit(mohit){
+    console.log("Welcome to this World");           //Call Back Function
+    return mohit;
+}
+mohit(45);    // it pass only => hellow Dunia
+rohit();      // it pass      => Above both output
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
