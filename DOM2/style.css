@@ -2,5 +2,52 @@ body{
     height: 100%;
     width: 100%;
     margin: 0 auto;
+    background-color: rgb(225, 160, 160);
 
 }
+.container{
+    display: flexbox;
+    background-color: aqua;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#heading1{
+    color: blue;
+    background-color: beige;
+}
+
+#heading2{
+    color: green;
+    background-color: beige;
+}
+
+
+/* Continer 2 */
+
+.container2{
+    display: flex;
+    justify-content: center;
+}
+
+.box{
+    
+    height: 7rem;
+    width: 5rem;
+    margin: 6px;
+    border: solid black 4px;
+    padding: 2rem;
+    background-color: aquamarine;
+    display: flex;
+    font-weight: 900;
+    font-size: large;
+
+}
+
+
+
+
+
+
+
