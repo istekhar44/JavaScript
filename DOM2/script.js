@@ -26,7 +26,7 @@ document.body.style.background = "pink";
        
            
          // Conatianer2 
-
+    //Do the Same Work for the two differnet ways using the loop and the function 
 
 let hellow = document.querySelectorAll(".box");    //Use for change the itmes names 
 hellow[0].textContent = "Apple";
