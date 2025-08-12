@@ -1,4 +1,0 @@
-//What is the Event in the javaScript?
-//The Change in the state of an object is known as an Event
-//Event are fired to notify code "intresting change" that may affect code Exection.
- 
