@@ -52,3 +52,8 @@ for(let i = 0 ; i<Price.length ; i++){
 
 }
 
+
+let arr = ["apple", "banana", "litch"]; //1D Array
+
+let arr2 = [ ["apple", "banana"],["potato","litchi"] ["Chicku","pineApple"]]; //2d Array
+
