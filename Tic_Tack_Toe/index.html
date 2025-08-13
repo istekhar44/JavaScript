@@ -7,26 +7,31 @@
     <link rel="stylesheet" href="syle.css">
 </head>
 <body>
-    <div class="msg-container hide">
-        <p id="msg">Winner</p>
-        <button id="new-btn">New Game</button>
+    <h1>Tic Tac Toe</h1>
+    
+    <div class="container">
+        <button class="box" disabled></button>
+        <button class="box" disabled></button>
+        <button class="box" disabled></button>
+        <button class="box" disabled></button>
+        <button class="box" disabled></button>
+        <button class="box" disabled></button>
+        <button class="box" disabled></button>
+        <button class="box" disabled></button>
+        <button class="box" disabled></button>
     </div>
-   <h1>Tic Tack Toe </h1> 
-   <div class="container">
-           <div class="game">
-               <buttton class="box"></buttton>
-               <buttton class="box"></buttton>
-               <buttton class="box"></buttton>
-               <buttton class="box"></buttton>
-               <buttton class="box"></buttton>
-               <buttton class="box"></buttton>
-               <buttton class="box"></buttton>
-               <buttton class="box"></buttton>
-               <buttton class="box"></buttton>
-        </div>
-   </div>
 
-   <button class="reset">Reset</button>
+    <div class="controls">
+        <button id="new-btn">New Game</button>
+        <button class="reset">Reset</button>
+    </div>
+
+    <div class="msg-container hide">
+        <div class="winner-msg">
+            <p id="msg"></p>
+            <button id="new-btn-popup">New Game</button>
+        </div>
+    </div>
                                                                                    
 
     <script src="app.js"></script>
