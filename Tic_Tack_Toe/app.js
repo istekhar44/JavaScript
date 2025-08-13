@@ -7,7 +7,7 @@ let boxes = document.querySelectorAll(".box");
 
         let turnO = true; // turnX turnO
 
-        const winPatterns = [
+        const winPatterns = [     //combination in which need to the win
             [0, 1, 2],
             [0, 3, 6],
             [0, 4, 8],
@@ -18,13 +18,13 @@ let boxes = document.querySelectorAll(".box");
             [6, 7, 8],
         ];
 
-        const resetGame = () => {
+        const resetGame = () => {          //Reset button
             turnO = true;
             enableBoxes();
             msgContainer.classList.add("hide");
         };
 
-        boxes.forEach((box) => {
+        boxes.forEach((box) => {                    //loop for 0 and the X
             box.addEventListener("click", () => {
                 console.log("Box was clicked");
                 if (turnO) {
