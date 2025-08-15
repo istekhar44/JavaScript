@@ -112,8 +112,8 @@ class Engineer extends person{
 }
 
 class doctor extends Engineer{
-    operation(){
-        console.log("operation");
+    work(){
+        console.log("operation");   //REMBER: If child and the parent have same constructor only run the child constructor 
     }
 }
 
