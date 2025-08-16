@@ -97,6 +97,8 @@ let rawat = new mohit();
          //Creating the 2 class
 
 class person{
+    
+
     eat(){
         console.log("Eat");
     }
@@ -118,6 +120,36 @@ class doctor extends Engineer{
 }
 
 let name = new doctor;
-console.log(name);
+console.log(name); 
 
+       //Super Key 
+//The Super keyword is used to call the constructor of its parent class to access the parent's properties and methods.
+//It is also use the access the parent properties therough the child class
+
+class human{
+    constructor(){
+        this.species = "Eating";
+    }
+
+    eat(){
+        console.log("Eating");
+    }
+}
+
+class mammals extends reptiles{
+    constructor(catogery){
+        super();  //To invoke parent class constructor 
+        this.brathing = skin;
+    }
+
+    body(){
+        console.log("Eating food")
+
+    }
+}
+
+let newObj = new mammals();
+console.log(newObj);
+
+//
 
