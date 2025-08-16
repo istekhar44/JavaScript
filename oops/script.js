@@ -1,6 +1,7 @@
 let student = {       //creating the multiple objects
     age : 23,
     class: 10,
+
     printMarks: function(){
         console.log("hellow", this.marks);
     },
@@ -35,7 +36,7 @@ const karanArjun ={
     },
 };
 
-karanArjun.__proto__ = employee;    //Create the prototype using the classes function 
+karanArjun.__proto__ = employee;    //Create the prototype using the classes function . automatically gets access to the properties and methods defined on the constructor’s prototype.
 
 
          //Classes in the opps
@@ -151,5 +152,57 @@ class mammals extends reptiles{
 let newObj = new mammals();
 console.log(newObj);
 
-//
+
+
+
+
+class User {
+    // 1. Properties (Attributes)
+    constructor(name, email) {
+        this.name = name;   // attribute
+        this.email = email; // attribute
+    }
+
+    // 2. Instance Method
+    viewDat() {
+        console.log(`User: ${this.name}, Email: ${this.email}`);
+    }
+
+    // 3. Getter Method
+    get userInfo() {
+        return `${this.name} <${this.email}>`;
+    }
+
+    // 4. Setter Method
+    set updateEmail(newEmail) {
+        this.email = newEmail;
+    }
+
+    // 5. Static Method
+    static welcomeMessage() {
+        console.log("Welcome to the College Website!");
+    }
+}
+
+// ---- Using the class ----
+
+// Create object (instance)
+let user1 = new User("Istekhar", "istekhar@example.com");
+
+// Call instance method
+user1.viewDat();
+
+// Call getter
+console.log(user1.userInfo);
+
+// Update email using setter
+user1.updateEmail = "alam@example.com";
+console.log(user1.userInfo);
+
+// Call static method
+User.welcomeMessage();
+
+
+
+
 
