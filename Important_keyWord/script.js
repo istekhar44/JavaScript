@@ -40,9 +40,25 @@ calculator("Print the sum",1,3,(a,b) => {  //use the arrow function
 },);   //set the time limit
 
 
+function getData(dataId,getNextData){
+    setTimeout(() =>{
+        console.log("data",dataId);
+        getNextData();
+
+    },2000);
+
+}
+getData(1,()=>{
+  getData(5);
+});
+
+ 
 
 
-function getData(dataId)
+
+
+
+
 
 
 
