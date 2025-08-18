@@ -40,17 +40,52 @@ calculator("Print the sum",1,3,(a,b) => {  //use the arrow function
 },);   //set the time limit
 
 
+
+
+
+
+
 function getData(dataId,getNextData){
     setTimeout(() =>{
         console.log("data",dataId);
-        getNextData();
+        if(getData){
+            getNextData();
+        }
+        
 
     },2000);
 
 }
-getData(1,()=>{
-  getData(5);
+//Nested Loop for the call print after the time delay
+getData(1,()=>{      
+  getData(hellow,()=>{     // <= this is Callback hell
+    getData(3,()=>{    
+    })
+  });
 });
+
+  
+
+
+              //Promises 
+//Promises Resolve the callBack Hell Problems
+
+//Promise is for "Eventual" Completion of task .It is an object in JavaScript
+//It is a solution to callback hell.
+
+//There Are the Three States 1.Pending 2.fullfiled 3.Rejected
+
+let promise = new promise((resolve ,reject)=>{
+    console.log("Promise");
+    resolve("123");
+
+})
+
+
+
+
+
+
 
  
 
