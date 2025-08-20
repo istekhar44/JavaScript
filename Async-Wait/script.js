@@ -23,6 +23,7 @@ function api(){
 };
 
 async function getWether(){
+    await api();                //Await is write in the function 
     await api();
 }
 
