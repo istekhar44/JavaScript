@@ -26,7 +26,7 @@ A comprehensive collection of JavaScript concepts, examples, and projects organi
 
 1. **Clone the repository:**
    ```bash
-   git clone [repository-url]
+   git clone (https://github.com/istekhar44/JavaScript.git)
    cd javascript-learning
    ```
 
