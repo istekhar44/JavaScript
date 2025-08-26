@@ -35,10 +35,10 @@ function sum(u,v){
 
                     /*ARROW FUNCTION*/
 
-// const hellow = (a, b) =>{
-//     console.log("Addition",a+b);                //Arrow function 
-//     console.log("Multiplication",a*b);
-// };   
+const hellow = (a, b) =>{
+    console.log("Addition",a+b);                //Arrow function 
+    console.log("Multiplication",a*b);
+};   
 
 
 
@@ -46,18 +46,18 @@ function sum(u,v){
 
 
 // //write the function of the to print the vowel in the string
-// const CountVowel=(str) =>{
-//    let count = 0;
-//    for(const char of str){
-//     if( char === "a" || char === "e" || char === "i" || char === "o" || char === "u")
-//         count++;
+const CountVowel=(str) =>{
+   let count = 0;
+   for(const char of str){
+    if( char === "a" || char === "e" || char === "i" || char === "o" || char === "u")
+        count++;
     
-//    }
-//    console.log(count);
-// }
+   }
+   console.log(count);
+}
 
-// CountVowel("Md Istekhar Alam");
-// CountVowel("jhfidahdkjfsdfkjfkjfiyuifsdokjyfhu");
+CountVowel("Md Istekhar Alam");
+CountVowel("aeiou");
 
 
 
@@ -71,8 +71,8 @@ function mohit(num){
     console.log("hellow Dunia");
 }
                                              
-function rohit(mohit){
-    console.log("Welcome to this World");           //Call Back Function
+function rohit(mohit){                      //Call Back Function
+    console.log("Welcome to this World");           
     return mohit;
 }
 mohit(45);    // it pass only => hellow Dunia
