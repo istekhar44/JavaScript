@@ -23,25 +23,23 @@ div.onmouseover =(e) =>{
 };
 
 //Remember you can only use the one event handle a time MEANS arrow function with the same functon eg: onmouseover
-
             //Beast way to handle the event in the javaScript
-
             //they are the EventListenrs
 
 
 
-// let btn = document.querySelector("#btn1");   //Arrow function on the div
-// btn.onclick=(event)=>{
-//     console.log("btn1 was Clicked ");
-//     let a = 45;
-//     a++;
-//     console.log(a);
+let btn = document.querySelector("#btn1");   //Arrow function on the div
+btn.onclick=(event)=>{
+    console.log("btn1 was Clicked ");
+    let a = 45;
+    a++;
+    console.log(a);
     
-//     console.log(event);
-//     console.log(event.type);   //Output= mouseOver
-//     console.log(event.target); //outPut= 
+    console.log(event);
+    console.log(event.type);   //Output= mouseOver
+    console.log(event.target); //outPut= 
 
-// };             
+};             
   
            // Do the Same thing using the Event listenr
 
