@@ -27,12 +27,14 @@ setTimeout(() =>{
 //What is theCallBack function ?
 //A CallBack is a function passed as an argument to another function.
 
-function sum (a,b){
+function sum(a,b){
     console.log(a+b);
 }
+
 function calculator(a,b ,sumCallback){  //Use the callback function
     console.log(a,b);
 }
+
 calculator("Print the Sum",4,5,sum);  //use as normal Callback
 
 calculator("Print the sum",1,3,(a,b) => {  //use the arrow function

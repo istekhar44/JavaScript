@@ -46,7 +46,7 @@ getData("Api is Calling",()=>{             //This is the callback hell
 //A JavaScript Promise object can be :
 //Pending : The result is undefined
 //Resolve : The result is value (fuilfilled)
-//Rejected: The result is an Erroe object 
+//Rejected: The result is an Error object 
 
 
 
