@@ -19,6 +19,20 @@ const btn = document.querySelector("#btn");
 // };
 
 
+                            //2Way to call the api 
+// function getFacts(){
+//     fetch(URL)
+//     .then((response)=>{
+//         return response.json();
+
+//     }).then((data)=>{
+//         console.log(data);
+//         factPara.innerText = data[2].text;
+//     });
+// }
+// btn.addEventListener("click",getFacts);
+
+
 
 // UnderStanding Terms
 
@@ -26,5 +40,9 @@ const btn = document.querySelector("#btn");
 // JSON   : is JsvaScript Object Notation    //Modern Method to Recive the data in JSON form 
 // JSON() : retuns a Second Promise that resolve with the result of parsing the Response with the parsing the
 //          respone body text as JSON. (Input is JSON , Output is JS object)
+
+
+
+
 
 
