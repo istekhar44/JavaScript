@@ -58,6 +58,8 @@ function getData(dataId,getNextData){
     },2000);
 
 }
+
+
 //Nested Loop for the call print after the time delay
 getData(1,()=>{      
   getData(hellow,()=>{     // <= this is Callback hell

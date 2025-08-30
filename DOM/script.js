@@ -42,6 +42,12 @@ console.log(heading2);
    
    document.querySelector("div").firstChild;  //Return the first element of the first Children
 
+
+   
+
+
+
+
    
 
 

@@ -29,6 +29,10 @@ async function getWether(){
 
 
 
+//Implemementation of the JavsScript
+
+
+
 
 
 
