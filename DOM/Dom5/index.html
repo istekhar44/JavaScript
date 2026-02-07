@@ -3,20 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOM |</title>
+    <title>DOM |Chai aur code </title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body style="background-color: black; color: white;">
+    
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thusday</div>
+    </div>
 
-    <div class="container">
-        
-        <h1 id="heading1">DOM Demo by Apana College</h1>
-        <h3>Topic: Starter Code </h3>
-        <p>Let's learn about DOM concept in detail.</p>
-        <button class="button1">Click Me!</button>
+   
+    
 
-    </div> 
+    <script >
+     const parent= document.querySelector('.parent');
+    //  console.log(parent);  //get the all element of the parent 
+    //  console.log(parent.children);  //It return the call children element
+    //  console.log(parent.children[0].innerText);
 
-    <script src="script.js"></script>
+    //  for(let i = 0 ; i< parent.children.length; i++){
+    //     console.log(parent.children[i].innerHTML);
+    //  }
+    //  parent.children[0].style.color= "orange";
+    //  parent.children[2].style.color="yellow";
+
+     console.log(parent.firstElementChild);  //it return the  first element
+
+     const hellow = document.querySelectorAll('parent') ;
+     console.log(hellow);
+     console.log("NODES:" , parent.chilNodes);//
+
+     
+
+
+    </script>
 </body>
 </html>
