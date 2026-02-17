@@ -1,37 +1,34 @@
-// Callback function After Study the promise function
+// // Callback function After Study the promise function
 
-function getData(dataId , getNextData){
-    setTimeout(() => {
-        console.log("data",dataId);  //Calling the First function
+// const { use } = require("react");
 
-        getNextData(()=>{
-            if(getData){
-                getNextData();  //Calling the second function
+// function getData(dataId , getNextData){
+//     setTimeout(() => {
+//         console.log("data",dataId);  //Calling the First function
 
-            }
+//         getNextData(()=>{
+//             if(getData){
+//                 getNextData();  //Calling the second function
 
-        });
+//             }
+
+//         });
         
-    }, 2000);
-}
+//     }, 2000);
+// }
 
-getData("Api is Calling",()=>{             //This is the callback hell 
-    console.log("getting the Data 1....");
-    getData("Data is Fetching",()=>{
-        console.log("getting the Data 2....");
-        getData("data is Executing",()=>{
-            console.log("getting the Data 3....");
+// getData("Api is Calling",()=>{             //This is the callback hell   => promise solve this problem 
+//     console.log("getting the Data 1....");
+//     getData("Data is Fetching",()=>{
+//         console.log("getting the Data 2....");
+//         getData("data is Executing",()=>{
+//             console.log("getting the Data 3....");
             
-        });
+//         });
 
-    });
+//     });
 
-});
-
-
-
-
-
+// });
 
 
 
@@ -43,107 +40,103 @@ getData("Api is Calling",()=>{             //This is the callback hell
 //It is Solution to Callback hell.
 //Eg : let promise = new promise((resolve,reject)=>{.....} )
 
-//A JavaScript Promise object can be :
+//A JavaScript Promise object can be :  Types of the promise 
 //Pending : The result is undefined
 //Resolve : The result is value (fuilfilled)
 //Rejected: The result is an Error object 
 
 
 
+const promise = new promise (function(resolve , reject){  //Promise is Creted 
+    setTimeout(function(){
+        console.log("Task is Completed ");
 
+    },1000);
+    resolve();
+},1000)
 
-
-
-const getPromise = () =>{
-    return new Promise((resolve,reject)=>{
-        console.log("I am promise");
-        resolve ("Sucess");  //if it is resolve use the "then" function in the arrow function
-        reject("error");    //if the promise if rejected use the "Catch" functionnin the form of the arrow function
-
-    });
-};
-
-let hellow2 = getPromise();
-hellow2.then((result)=>{      // If the promise is resolve what work to do
-    console.log("Promise is fullFilled");
-    
-
-});
-
-hellow2.catch((error)=>{    //If the promise is rejected use the catch function what to after the error
-    hellow2.log("Promise is Rejected");
-
-});
+promise.then(function(){   // .Then is realted with the promise is Prsolve 
+   console.log("Promise is Consume ");
+})
 
 
 
 
 
+const promise2 = new Promise(function(resolve, reject){  //Crete the Second Promise 
+    setTimeout(function(){
+        console.log("Complete the 2 Task");
+        resolve();    //Promise is reslove 
+
+    },1000)  //1 second each execute the task 
+}).then(function(){
+     console.log("Print the Second Task");  //print the 2task is completed
+})
 
 
 
-//What is the AsyncFunction
+//Promise to pass the data 
 
-function AsyncFunction(){                   //Creating api 1
-    return new Promise((resolve,reject) =>{
-        setTimeout(()=>{
-            console.log("Some Data");
-            resolve("sucess");
+let promise3 = new promise(function(resolve , reject){
+    setTimeout(function(){
+        resolve({ username :  "chai ", email: "md-istekhar-alam" });   //Pass the data to the promise to .then 
 
-        },2000);
+    },1000)
 
-    },);
-};
-
-let hellow = AsyncFunction();   //Callig the api 2 
-hellow.then((result)=>{
-    console.log("fetching the Data1....");
-
-    let p2 = AsyncFunction();    //calling the other function 
-    p2.then(()=>{
-        console.log("Fetching the Data 2....");
-
-    });
-
-});
+})
+promise3.then(function(user){  //pass the data
+    console.log(user)  
+})
 
 
+//Promise 4 enhance to pass the data and Error if else
+const promise4 = new promise(function(){
+    let error = true;
+    if(!error){       //Error is not occured 
+        resolve({username: "Hitesh" , age: 23 , email: "mdistekharalam535@gmail.com"});
+    }else{            //Erroe is occured 
+        reject("Something is Wrong ");
+    }
+})
+
+
+//PromiseName.then().catch.final();    //It is the Complete promise call
+promise4.then((user)=>{
+    console.log(user);
+    return user.username;
+}).then((username)=>{
+    console.log(username);
+}).catch(function(error){
+    console.log(error);
+}).finally(()=>{
+    console.log("The Promise is Finally resolve or Rejected");
+})
 
 
 
 
+//Promise USES the Acync and Await
+const promise5 = new promise((resolve,reject)=>{
+    let error = true;
+    if(!error){
+        resolve({username : "Salamat", password :"123"});
+    }else{
+        reject("Something went to worng");
+    }
+})
+
+async function consumepromise5 (){
+    try {
+        const response = await promise5;
+        console.log(response);      //Print the Response
+    } catch (error) {
+        console.log(error)  //Print the Error 
+    }
+}
+consumepromise5();  //Call the promise 
 
 
 
-
-function AsyncFunction2(){                  //Creating api 2
-    return new Promise((resolve,reject) =>{
-        setTimeout(()=>{
-            reject("Error");
-
-        },2000);
-
-    },);
-};
-
-console.log("Calling the api 2") //Caling the api 2
-let p2 = AsyncFunction2();
-p2.catch((error)=>{
-    console.log("Error in the Pogram");
-});
-
-
-//Promise Chain is Much better than the CallBack Hell problem .
-//write the code and learn the progam
- 
-// .
-// .
-// .
-// .
-// .
-// .
-// .
-// .
 
 
 

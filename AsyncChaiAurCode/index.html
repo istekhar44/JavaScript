@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acync_Await</title>
+</head>
+<body style="background-color: black; color: aliceblue;">
+    <h1>ASync And Await</h1>
+    <button id="stopBtn">Stops</button>
+     
+</body>
+<script>
+    const hitesh = setTimeout(()=>{   //Print only one time 
+        console.log("JavaScript is Start ");
+    },2000)
+    
+    const changeText = function(){
+        document.querySelector('h1').innerHTML= "Best javaScript Lessons";
+    }
+
+    const changeMe = (changeText,2000);
+
+    document.querySelector('#stopBtn').addEventListener('click',function(){
+        clearTimeout(changeMe);
+        console.log(changeMe);
+    })
+    
+
+</script>
+</html>
